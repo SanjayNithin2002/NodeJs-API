@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-api",
+  "version": "1.0.0",
+  "description": "node js RESTful API for ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanjayNithin2002/NodeJs-API.git"
+  },
+  "author": "Sanjay Nithin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanjayNithin2002/NodeJs-API/issues"
+  },
+  "homepage": "https://github.com/SanjayNithin2002/NodeJs-API#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "nodeman": "^1.1.2"
+  }
+}
