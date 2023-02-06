@@ -8,7 +8,6 @@ var orderRoutes = require("./api/routes/orders");
 
 var app = express();
 mongoose.connect("mongodb+srv://sanjaynithin:" + process.env.MONGO_PASSWORD + "@cluster0.kgz6ota.mongodb.net/?retryWrites=true&w=majority");
-
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
