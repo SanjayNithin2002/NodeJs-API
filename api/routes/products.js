@@ -109,7 +109,7 @@ router.delete("/:id", (req, res, next) => {
         console.log(doc);
         if(doc){
             res.status(200).json({
-                message : "Object Deleted"
+                message : "Product Deleted"
             });
         }else{
             res.status(404).json({
