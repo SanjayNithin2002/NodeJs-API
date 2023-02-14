@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var productRoutes = require("./api/routes/products");
 var orderRoutes = require("./api/routes/orders");
-
+var userRoutes = require("./api/routes/user");
 
 var app = express();
 mongoose.connect("mongodb+srv://sanjaynithin:" + process.env.MONGO_PASSWORD + "@cluster0.kgz6ota.mongodb.net/?retryWrites=true&w=majority");
@@ -30,6 +30,7 @@ app.use((req,res,next)=>{
 
 app.use("/products",productRoutes);
 app.use("/orders", orderRoutes);
+app.use("/user", userRoutes);
 
 app.use((req,res,next)=>{
     const error = new Error("Not Found");
