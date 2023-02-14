@@ -1,12 +1,12 @@
-var express = require("express");
-var morgan = require("morgan");
-var bodyParser = require("body-parser");
-var mongoose = require("mongoose");
-var productRoutes = require("./api/routes/products");
-var orderRoutes = require("./api/routes/orders");
-var userRoutes = require("./api/routes/user");
+const express = require("express");
+const morgan = require("morgan");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+const productRoutes = require("./api/routes/products");
+const orderRoutes = require("./api/routes/orders");
+const userRoutes = require("./api/routes/user");
 
-var app = express();
+const app = express();
 mongoose.connect("mongodb+srv://sanjaynithin:" + process.env.MONGO_PASSWORD + "@cluster0.kgz6ota.mongodb.net/?retryWrites=true&w=majority");
 app.use(morgan('dev'));
 app.use('/uploads',express.static('uploads'));

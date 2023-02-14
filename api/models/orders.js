@@ -1,4 +1,4 @@
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 const orderSchema = mongoose.Schema({
     _id : mongoose.SchemaTypes.ObjectId,
